@@ -3,6 +3,7 @@
 const path = require('path')
 const autoprefixer = require('autoprefixer')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
 	mode: 'development',
@@ -27,6 +28,10 @@ module.exports = {
 	],
 	module: {
 		rules: [
+			{
+				test: /\.css$/i,
+				use: [MiniCssExtractPlugin.loader, "css-loader"],
+			},
 			{
 				test: /\.(scss)$/,
 				use: [
@@ -55,6 +60,8 @@ module.exports = {
 					}
 				]
 			},
+
+
 			{
 				test: /\.html$/i,
 				use: ['html-loader']
