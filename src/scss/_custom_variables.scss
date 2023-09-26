@@ -1,12 +1,33 @@
+$enable-dark-mode: false;
+
 // Colors:
 
 //CTA
+$cta: #ff7a85;
 $primary: #ff525d;
+$white: #ffffff;
 
 //HEADINGS
 $secondary: #1f3f5b;
+$text: #4b5862;
 
 //text
 
 // white is defined
 $cta-hover: #ff7a85;
+
+$font-weight-light: 300;
+$font-weight-base: $font-weight-light;
+$line-height-base: 2;
+
+$font-family-base: "Ubuntu", sans-serif;
+$font-family-code: "Overpass", sans-serif;
+
+$headings-color: $secondary;
+$headings-font-family: "Overpass", sans-serif;
+
+$navbar-light-color: rgba(white, 0.65);
+$navbar-light-hover-color: rgba(white, 1);
+
+$nav-link-color: #cccccc;
+$nav-link-hover-color: $white;

@@ -11,6 +11,10 @@ body {
   flex-direction: column;
   min-height: 100%;
 }
+
+p {
+  color: $text;
+}
 // -----------------------------------------------------------------
 // background under header and hero - red
 .bg-intro {
@@ -49,4 +53,40 @@ body {
 .bg-footer {
   background-color: #25252d;
   border-radius: 0 200px 0 0;
+}
+
+// btns
+.btn-primary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: #ff7a85;
+  --bs-btn-bg: white;
+  --bs-btn-border-color: white;
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: #ff7a85;
+  --bs-btn-hover-border-color: #ff7a85;
+  --bs-btn-focus-shadow-rgb: #ff7a85;
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #{shade-color(#ff7a85, 20%)};
+  --bs-btn-active-border-color: #{shade-color(#ff7a85, 20%)};
+}
+
+.btn-light {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: white;
+  --bs-btn-bg: #ff7a85;
+  --bs-btn-border-color: #ff7a85;
+  --bs-btn-hover-color: #ff7a85;
+  --bs-btn-hover-bg: white;
+  --bs-btn-hover-border-color: white;
+  --bs-btn-focus-shadow-rgb: #ff7a85;
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #{shade-color($cta, 20%)};
+  --bs-btn-active-border-color: #{shade-color($cta, 20%)};
+}
+
+.nav-link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
