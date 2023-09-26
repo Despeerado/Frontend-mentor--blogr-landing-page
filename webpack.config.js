@@ -24,21 +24,21 @@ module.exports = {
 		historyApiFallback: true
 	},
 	plugins: [
-		new HtmlWebpackPlugin({ template: './src/index.html' })
+		new HtmlWebpackPlugin({ template: './src/index.html' }),
+		new MiniCssExtractPlugin({
+			filename: '[name][contenthash].css'
+		})
 	],
 	module: {
 		rules: [
 			{
-				test: /\.css$/i,
-				use: [MiniCssExtractPlugin.loader, "css-loader"],
-			},
-			{
-				test: /\.(scss)$/,
+				test: /\.(scss)$/i,
 				use: [
-					{
-						// Adds CSS to the DOM by injecting a `<style>` tag
-						loader: 'style-loader'
-					},
+					MiniCssExtractPlugin.loader,
+					// {
+					// 	// Adds CSS to the DOM by injecting a `<style>` tag
+					// 	loader: 'style-loader'
+					// },
 					{
 						// Interprets `@import` and `url()` like `import/require()` and will resolve them
 						loader: 'css-loader'
@@ -57,7 +57,9 @@ module.exports = {
 					{
 						// Loads a SASS/SCSS file and compiles it to CSS
 						loader: 'sass-loader'
-					}
+					},
+
+
 				]
 			},
 
