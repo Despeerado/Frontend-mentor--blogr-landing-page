@@ -9,8 +9,11 @@ module.exports = {
 	entry: './src/js/main.js',
 	output: {
 		filename: '[name][contenthash].js',
+		clean: true,
+		assetModuleFilename: '[name][ext]',
 		path: path.resolve(__dirname, 'dist')
 	},
+	// devtool: 'source-map',
 	devServer: {
 		static: path.resolve(__dirname, 'dist'),
 		port: 8080,
@@ -53,7 +56,11 @@ module.exports = {
 				]
 			},
 			{
-				test: /\.(png|jpg|jpeg|gif|svg)$/i,
+				test: /\.html$/i,
+				use: ['html-loader']
+			},
+			{
+				test: /\.(png|svg|jpg|jpeg|gif)$/i,
 				type: 'asset/resource'
 			},
 		]
