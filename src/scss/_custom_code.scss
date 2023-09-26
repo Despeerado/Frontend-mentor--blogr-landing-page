@@ -1,0 +1,52 @@
+// Custom code
+
+// -----------------------------------------------------------------
+// expand cotent to full height
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+// -----------------------------------------------------------------
+// background under header and hero - red
+.bg-intro {
+  background-image: url("/images/bg-pattern-intro-mobile.svg"),
+    linear-gradient(120deg, rgba(255, 157, 112, 1) 0%, rgba(255, 82, 93, 1) 50%);
+  background-position: 35% 35%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  border-radius: 0 0 0 50px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff9d70",endColorstr="#ff525d",GradientType=1);
+  @include media-breakpoint-up(md) {
+    background-size: auto;
+    background-position: 35% 50%;
+    background-image: url("/images/bg-pattern-intro-desktop.svg"),
+      linear-gradient(
+        45deg,
+        rgba(255, 157, 112, 1) 0%,
+        rgba(255, 82, 93, 1) 54%
+      );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff9d70",endColorstr="#ff525d",GradientType=1);
+  }
+}
+
+// background section - phones - dark blue
+.bg-section {
+  background: linear-gradient(
+    120deg,
+    rgba(44, 45, 63, 1) 0%,
+    rgba(63, 65, 100, 1) 66%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2c2d3f",endColorstr="#3f4164",GradientType=1);
+  border-radius: 0 200px 0 200px;
+}
+
+// section footer - dark blue
+.bg-footer {
+  background-color: #25252d;
+  border-radius: 0 200px 0 0;
+}
