@@ -8,13 +8,16 @@ module.exports = {
 	mode: 'development',
 	entry: './src/js/main.js',
 	output: {
-		filename: 'main.js',
+		filename: '[name][contenthash].js',
 		path: path.resolve(__dirname, 'dist')
 	},
 	devServer: {
 		static: path.resolve(__dirname, 'dist'),
 		port: 8080,
-		hot: true
+		open: true,
+		hot: true,
+		compress: true,
+		historyApiFallback: true
 	},
 	plugins: [
 		new HtmlWebpackPlugin({ template: './src/index.html' })
@@ -48,7 +51,11 @@ module.exports = {
 						loader: 'sass-loader'
 					}
 				]
-			}
+			},
+			{
+				test: /\.(png|jpg|jpeg|gif|svg)$/i,
+				type: 'asset/resource'
+			},
 		]
 	}
 }
