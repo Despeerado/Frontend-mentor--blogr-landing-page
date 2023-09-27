@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<section class="bg-intro pb-7">
+	<section class="bg-intro pb-8">
 		<div class="container">
 			<!-- NAVBAR -->
 			<nav class="navbar navbar-expand-md bg-body-primar pt-5 pb-6">
@@ -97,9 +97,13 @@
 				<h1 class="pb-3 text-white">A modern publishing platform</h1>
 				<div class="col-lg-6 pbr-5 mx-auto">
 					<p class="text-white lead py-2 ">Grow your audience and build your online brand</p>
-					<div class="d-grid gap-2 d-flex flex-col justify-content-sm-center">
-						<button type="button" class="btn btn-primary  btn-lg">Start for Free</button>
-						<button type="button" class="btn btn-light btn-lg">Learn More</button>
+					<div class="d-flex flex-column flex-sm-row justify-content-sm-center gap-4">
+						<div>
+							<button type="button" class=" btn btn-primary  btn-lg">Start for Free</button>
+						</div>
+						<div>
+							<button type="button" class=" btn btn-light btn-lg">Learn More</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -107,24 +111,30 @@
 	</section>
 	<!-- END HERO -->
 	<!-- SECTION 1 -->
-	<section class="py-8">
+	<section class="py-6 py-md-8">
 		<div class="container">
-			<h2 class="display-6 fw-bold lh-1 text-center text-sm-start pb-sm-6">Designed for the future</h2>
+			<h2 class="display-6 fw-bold lh-1 text-center pb-6 pb-sm-6">Designed for the future</h2>
 			<div class="row align-items-center">
 				<div class="col-12 col-lg-5 position-relative order-sm-2">
 					<div class="position-relative">
-						<img class="editor img-fluid" src="/images/illustration-editor-desktop.svg" alt="illustration">
+						<picture>
+							<source media=" (min-width: 992px)" srcset="/images/illustration-editor-desktop.svg">
+							<source media="(min-width: 768px)" srcset="/images/illustration-editor-mobile.svg">
+							<img src="/images/illustration-editor-mobile.svg" class="editor img-fluid" alt="illustration">
+						</picture>
 					</div>
 				</div>
 				<div class="col-12 col-lg-7 order-sm-1">
-					<h2 class="text-center text-sm-start p-sm-6">Introducing an extensible editor</h2>
-					<p class="pb-4">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating
+					<h2 class="text-center text-md-start pb-sm-4">Introducing an extensible editor</h2>
+					<p class="text-center text-md-start pb-4">Blogr features an exceedingly intuitive interface which lets you
+						focus on one thing: creating
 						content.
 						The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
 						videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
 						change the looks of a blog.</p>
-					<h2 class="pb-4">Robust content management</h2>
-					<p>Flexible content management enables users to easily move through posts. Increase the usability
+					<h2 class="text-center text-md-start pb-sm-4">Robust content management</h2>
+					<p class="text-center text-md-start pb-4">Flexible content management enables users to easily move through
+						posts. Increase the usability
 						of your blog
 						by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
 					</p>
@@ -137,44 +147,58 @@
 	<!-- END SECTION 1 -->
 	<!-- SECTION 2-->
 	<section class="bg-section py-md-6">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-5">
-					<div class="position-relative">
-						<img class="smartphones img-fluid" src="/images/illustration-phones.svg" alt="phones">
-					</div>
+		<div class="container-lg">
+			<div class="row align-items-center position-relative">
+				<div class="col-12 col-lg-5">
+
+					<img class="smartphones img-fluid" src="/images/illustration-phones.svg" alt="phones">
+
 				</div>
-				<div class="col-lg-7">
-					<h2 class="display-6 fw-bold lh-1 text-white">State of the Art Infrastructure</h2>
-					<p class="text-white">With reliability and speed in mind, worldwide data centers provide the backbone for
+				<div class="col-12 col-lg-7 pb-5 pb-md-0 ">
+					<h2 class="display-6 fw-bold lh-1 pb-4 text-white text-center text-md-left">State of the Art Infrastructure
+					</h2>
+					<p class="text-white text-center text-md-start">With reliability and speed in mind, worldwide data centers
+						provide the backbone for
 						ultra-fast
 						connectivity.
 						This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
 					</p>
+				</div>
+				<div class="special-div">
+					<div class="cover">
+
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- END SECTION 2-->
 	<!-- SECTION 3-->
-	<section class="py-9">
+	<section class="py-4 py-md-9">
 		<div class="container">
 			<div class="row  align-items-center">
 				<div class="col-12 col-lg-5">
 					<div class="position-relative">
-						<img class="laptop img-fluid" src="/images/illustration-laptop-desktop.svg" alt="laptop">
+						<picture>
+							<source media="(min-width: 992px)" srcset="/images/illustration-laptop-desktop.svg">
+							<source media="(min-width: 768px)" srcset="/images/illustration-laptop-mobile.svg">
+							<img class="laptop img-fluid" src="/images/illustration-laptop-mobile.svg" alt="Laptop">
+						</picture>
 					</div>
 				</div>
 				<div class=" col-12 col-lg-7">
-					<h2>Free, open, simple</h2>
-					<p>Blogr is a free and open source application backed by a large community of helpful developers.
+					<h2 class="text-center text-md-start pb-4">Free, open, simple</h2>
+					<p class="text-center text-md-start pb-4">Blogr is a free and open source application backed by a large
+						community of helpful developers.
 						It supports
 						features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting
 						tools,
 						and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
 					</p>
-					<h2>Powerful tooling</h2>
-					<p>Batteries included. We built a simple and straightforward CLI tool that makes customization and
+					<h2 class="text-center text-md-start pb-4">Powerful tooling</h2>
+					<p class="text-center text-md-start pb-4">Batteries included. We built a simple and straightforward CLI tool
+						that makes customization
+						and
 						deployment a breeze, but capable of producing even the most complicated sites.
 					</p>
 				</div>
@@ -186,14 +210,14 @@
 
 	<section class="bg-footer py-6">
 		<div class="container">
-			<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 ">
-				<div class="col">
-					<a href="#" class="d-flex align-items-center text-decoration-none">
+			<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 text-center text-md-start">
+				<div class="col pb-5">
+					<a href="#" class="text-decoration-none">
 						<img src="/images/logo.svg" alt="blogr_logo">
 					</a>
 				</div>
 
-				<div class="col">
+				<div class="col pb-5">
 					<h5 class="text-white pb-2">Product</h5>
 					<ul class=" nav flex-column">
 						<li class="nav-item"><a href="#" class="nav-link p-0">Overview</a>
@@ -205,7 +229,7 @@
 					</ul>
 				</div>
 
-				<div class="col">
+				<div class="col pb-5">
 					<h5 class="text-white pb-2">Company</h5>
 					<ul class="nav flex-column">
 						<li class="nav-item"><a href="#" class="nav-link p-0 ">About</a></li>
@@ -215,7 +239,7 @@
 					</ul>
 				</div>
 
-				<div class="col">
+				<div class="col pb-5">
 					<h5 class="text-white pb-2">Connect</h5>
 					<ul class=" nav flex-column">
 						<li class="nav-item"><a href="#" class="nav-link p-0 ">Contact</a></li>
