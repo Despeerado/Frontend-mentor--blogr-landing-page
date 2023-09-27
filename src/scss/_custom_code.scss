@@ -74,8 +74,23 @@ p {
 .btn-light {
   --bs-btn-font-weight: 600;
   --bs-btn-color: white;
-  --bs-btn-bg: #ff7a85;
+  --bs-btn-bg: transparent;
   --bs-btn-border-color: #ff7a85;
+  --bs-btn-hover-color: #ff7a85;
+  --bs-btn-hover-bg: white;
+  --bs-btn-hover-border-color: white;
+  --bs-btn-focus-shadow-rgb: #ff7a85;
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #{shade-color($cta, 20%)};
+  --bs-btn-active-border-color: #{shade-color($cta, 20%)};
+  border-radius: $border-radius-pill;
+}
+
+.btn-light-transparent {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: white;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: #transparent;
   --bs-btn-hover-color: #ff7a85;
   --bs-btn-hover-bg: white;
   --bs-btn-hover-border-color: white;
@@ -93,8 +108,35 @@ p {
   }
 }
 
+// old dropdown toggle
+// .dropdown-toggle::after {
+//   display: inline-block;
+//   content: "";
+//   margin-left: 0.255em;
+//   vertical-align: 0.255em;
+//   border-top: 0.3em solid;
+//   border-right: 0.3em solid transparent;
+//   border-bottom: 0;
+//   border-left: 0.3em solid transparent;
+// }
+
+//new dropdown toggle
+
+.dropdown-toggle::after {
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  margin: -0.3em 0 0 0.4em;
+  vertical-align: middle;
+  content: "";
+  border: 0.3em solid;
+  border-width: 0 0.15em 0.15em 0;
+  transform: rotateZ(45deg);
+}
+
 .editor {
   position: relative;
+  width: 100%;
   @include media-breakpoint-up(lg) {
     position: absolute;
     top: 50%;
@@ -105,13 +147,32 @@ p {
 
 .laptop {
   position: relative;
+  width: 100%;
+  // object-fit: cover;
+  // max-width: 380px;
+  height: auto;
   @include media-breakpoint-up(lg) {
     position: absolute;
     top: 50%;
     left: 10%;
     transform: translate(-50%, -50%);
   }
-  object-fit: contain;
-  max-width: 612px;
+}
+
+.smartphones {
+  position: relative;
+  width: 100%;
+  // object-fit: contain;
+  max-width: 380px;
   height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 470px;
+  }
 }
