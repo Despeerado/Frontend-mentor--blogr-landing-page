@@ -24,7 +24,7 @@
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarNavDropdown">
-						<ul class="navbar-nav">
+						<ul class="navbar-nav flex-fill">
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
 									aria-expanded="false">
@@ -73,11 +73,15 @@
 									</li>
 								</ul>
 							</li>
-							<li class="nav-item">
-								<a class="btn btn-primary" aria-current="page" href="#">Login</a>
-							</li>
-							<li class="nav-item">
-								<a class="btn  btn-light" aria-current="page" href="#">Sign Up</a>
+							<li class="ms-md-auto">
+								<ul class="d-flex flex-row flex-md-col list-unstyled gap-2">
+									<li class="nav-item">
+										<a class="btn btn-primary" aria-current="page" href="#">Login</a>
+									</li>
+									<li class="nav-item">
+										<a class="btn  btn-light" aria-current="page" href="#">Sign Up</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</div>
@@ -86,23 +90,23 @@
 		</div>
 		<!-- END 	NAVBAR -->
 		<!-- HERO -->
-		<div class="px-4 py-5 my-5 text-center">
+		<div class="text-center">
 			<h1 class="display-5 fw-bold text-white">A modern publishing platform</h1>
 			<div class="col-lg-6 mx-auto">
-				<p class="mb-4 text-white">Grow your audience and build your online brand</p>
+				<p class="text-white">Grow your audience and build your online brand</p>
 				<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-					<button type="button" class="btn btn-primary  btn-lg px-4 gap-3">Start for Free</button>
-					<button type="button" class="btn btn-light btn-lg px-4">Learn More</button>
+					<button type="button" class="btn btn-primary  btn-lg gap-3">Start for Free</button>
+					<button type="button" class="btn btn-light btn-lg">Learn More</button>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- END HERO -->
 	<!-- SECTION 1 -->
-	<div class="container my-5">
+	<div class="container">
 		<h2 class="display-4 fw-bold lh-1 text-center">Designed for the future</h2>
-		<div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center">
-			<div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+		<div class="row align-items-center">
+			<div class="col-lg-7">
 				<h2>Introducing an extensible editor</h2>
 				<p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating
 					content.
@@ -116,7 +120,7 @@
 				</p>
 
 			</div>
-			<div class="col-lg-4 offset-lg-1 p-0 overflow-hidden">
+			<div class="col-lg-4 offset-lg-1 overflow-hidden">
 				<img class="rounded-lg-3" src="/images/illustration-editor-desktop.svg" alt="illustration" width="720">
 			</div>
 		</div>
@@ -124,12 +128,12 @@
 	<!-- END SECTION 1 -->
 	<!-- SECTION 2-->
 	<section class="bg-section">
-		<div class="container my-5">
-			<div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center">
-				<div class="col-lg-5 p-0 overflow-hidden">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-5 overflow-hidden">
 					<img src="/images/illustration-phones.svg" alt="phones">
 				</div>
-				<div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+				<div class="col-lg-7">
 					<h2 class="display-4 fw-bold lh-1 text-white ">State of the Art Infrastructure</h2>
 					<p class="text-white">With reliability and speed in mind, worldwide data centers provide the backbone for
 						ultra-fast
@@ -142,13 +146,13 @@
 	</section>
 	<!-- END SECTION 2-->
 	<!-- SECTION 3-->
-	<div class="container my-5">
-		<div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center">
+	<div class="container">
+		<div class="row  align-items-center">
 
-			<div class="col-lg-5 p-0 ">
+			<div class="col-lg-5 ">
 				<img class="rounded-lg-3" src="/images/illustration-laptop-desktop.svg" alt="laptop" width="720">
 			</div>
-			<div class="col-lg-7 p-lg-5 pt-lg-3">
+			<div class="col-lg-7">
 				<h2>Free, open, simple</h2>
 				<p>Blogr is a free and open source application backed by a large community of helpful developers.
 					It supports
@@ -167,41 +171,41 @@
 
 	<section class="bg-footer">
 		<div class="container">
-			<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 ">
-				<div class="col mb-3">
-					<a href="#" class="d-flex align-items-center mb-3 text-decoration-none">
+			<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 ">
+				<div class="col">
+					<a href="#" class="d-flex align-items-center text-decoration-none">
 						<img src="/images/logo.svg" alt="blogr_logo">
 					</a>
 				</div>
 
-				<div class="col mb-3">
+				<div class="col">
 					<h5 class="text-white">Product</h5>
 					<ul class=" nav flex-column">
-						<li class="nav-item mb-2"><a href="#" class="nav-link p-0">Overview</a>
+						<li class="nav-item"><a href="#" class="nav-link p-0">Overview</a>
 						</li>
-						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Pricing</a></li>
-						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Marketplace</a></li>
-						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Features</a></li>
-						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Integrations</a></li>
+						<li class="nav-item"><a href="#" class="nav-link p-0 ">Pricing</a></li>
+						<li class="nav-item"><a href="#" class="nav-link p-0 ">Marketplace</a></li>
+						<li class="nav-item"><a href="#" class="nav-link p-0 ">Features</a></li>
+						<li class="nav-item"><a href="#" class="nav-link p-0 ">Integrations</a></li>
 					</ul>
 				</div>
 
-				<div class="col mb-3">
+				<div class="col">
 					<h5 class="text-white">Company</h5>
 					<ul class="nav flex-column">
-						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">About</a></li>
-						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Team</a></li>
-						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Blog</a></li>
-						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Careers</a></li>
+						<li class="nav-item"><a href="#" class="nav-link p-0 ">About</a></li>
+						<li class="nav-item"><a href="#" class="nav-link p-0 ">Team</a></li>
+						<li class="nav-item"><a href="#" class="nav-link p-0 ">Blog</a></li>
+						<li class="nav-item"><a href="#" class="nav-link p-0 ">Careers</a></li>
 					</ul>
 				</div>
 
-				<div class="col mb-3">
+				<div class="col">
 					<h5 class="text-white">Connect</h5>
 					<ul class=" nav flex-column">
-						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Contact</a></li>
-						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Newsletter</a></li>
-						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">LinkedIn</a></li>
+						<li class="nav-item"><a href="#" class="nav-link p-0 ">Contact</a></li>
+						<li class="nav-item"><a href="#" class="nav-link p-0 ">Newsletter</a></li>
+						<li class="nav-item"><a href="#" class="nav-link p-0 ">LinkedIn</a></li>
 					</ul>
 				</div>
 			</footer>
