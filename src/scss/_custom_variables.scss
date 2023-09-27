@@ -10,6 +10,8 @@ $container-max-widths: (
   xxl: 1200px,
 );
 
+$container-padding-x: 2rem;
+
 $spacer: 1rem;
 $spacers: (
   0: 0,
@@ -23,6 +25,24 @@ $spacers: (
   8: $spacer * 7.5,
   9: $spacer * 9,
 );
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem,
+);
+
+$font-size-base: 1rem; // Assumes the browse, typically `16px`
+
+$h1-font-size: $font-size-base * 4;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
 
 $bg-border-radius: 6rem;
 // Colors:
