@@ -68,6 +68,7 @@ p {
   --bs-btn-active-color: var(--bs-btn-hover-color);
   --bs-btn-active-bg: #{shade-color(#ff7a85, 20%)};
   --bs-btn-active-border-color: #{shade-color(#ff7a85, 20%)};
+  border-radius: $border-radius-pill;
 }
 
 .btn-light {
@@ -82,6 +83,7 @@ p {
   --bs-btn-active-color: var(--bs-btn-hover-color);
   --bs-btn-active-bg: #{shade-color($cta, 20%)};
   --bs-btn-active-border-color: #{shade-color($cta, 20%)};
+  border-radius: $border-radius-pill;
 }
 
 .nav-link {
@@ -89,4 +91,27 @@ p {
   &:hover {
     text-decoration: underline;
   }
+}
+
+.editor {
+  position: relative;
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    top: 50%;
+    left: 110%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.laptop {
+  position: relative;
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  }
+  object-fit: contain;
+  max-width: 612px;
+  height: auto;
 }
