@@ -157,17 +157,10 @@ p {
 }
 
 .laptop {
-  position: relative;
-  width: 100%;
-  // object-fit: cover;
-  // max-width: 380px;
-  height: auto;
-  // @include media-breakpoint-up(lg) {
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 10%;
-  //   transform: translate(-50%, -50%);
-  // }
+  left: unset;
+  @include media-breakpoint-up(lg) {
+    // left: -200px;
+  }
 }
 
 // .smartphones {
@@ -210,4 +203,29 @@ p {
   background-image: url("/images/bg-pattern-circles.svg");
   background-repeat: no-repeat;
   background-position: -200px -550px;
+}
+
+.illustration-background {
+  background: url("/images/illustration-editor-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 800px;
+    right: -25%;
+    z-index: 200;
+    width: 70%;
+    margin-left: auto;
+  }
 }
