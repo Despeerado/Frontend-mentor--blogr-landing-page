@@ -1,7 +1,7 @@
-const hambuger = document.querySelector(".hamburger");
+const hamburger = document.querySelector(".hamburger");
 
 document.addEventListener("DOMContentLoaded", () => {
-	hambuger.addEventListener("click", () => {
-		hambuger.classList.toggle("is-active");
+	hamburger.addEventListener("click", () => {
+		hamburger.classList.toggle("is-active");
 	});
 });
