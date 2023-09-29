@@ -1,16 +1,20 @@
-$enable-dark-mode: false;
+//CTA
+$cta: #ff7a85;
+$primary: #ff525d;
+$white: #ffffff;
+$black: #000000;
+//HEADINGS
+$secondary: #1f3f5b;
+$text: #4b5862;
+
+//text
+
+// white is defined
+$cta-hover: #ff7a85;
 $enable-shadows: true;
+$enable-gradients: true;
 
-$container-max-widths: (
-  xs: 540px,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1140px,
-  xxl: 1440px,
-);
-
-$container-padding-x: 2rem;
+$enable-dark-mode: false;
 
 $spacer: 1rem;
 $spacers: (
@@ -26,6 +30,23 @@ $spacers: (
   9: $spacer * 9,
 );
 
+$paragraph-margin-bottom: null;
+
+$container-max-widths: (
+  xs: 540px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1140px,
+  xxl: 1440px,
+);
+
+$grid-columns: 12;
+$grid-gutter-width: 1.5rem * 2;
+$grid-row-columns: 6;
+
+// scss-docs-start spacer-variables-maps
+
 $display-font-sizes: (
   1: 5rem,
   2: 4.5rem,
@@ -34,8 +55,28 @@ $display-font-sizes: (
   5: 3rem,
   6: 2.5rem,
 );
+$box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
+$box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075);
+$box-shadow-lg: 0 1rem 3rem rgba($black, 0.175);
+$box-shadow-inset: inset 0 1px 2px rgba($black, 0.075);
 
-$font-size-base: 1rem; // Assumes the browse, typically `16px`
+$nav-link-color: #cccccc;
+$nav-link-hover-color: $white;
+
+$navbar-light-color: rgba(white, 0.65);
+$navbar-light-hover-color: rgba(white, 1);
+$navbar-light-active-color: white;
+
+$dropdown-border-width: 0;
+$dropdown-box-shadow: $box-shadow;
+
+$font-family-base: "Ubuntu", sans-serif;
+$font-family-code: "Overpass", sans-serif;
+$font-size-base: 1rem;
+
+$font-weight-light: 300;
+$font-weight-base: $font-weight-light;
+$line-height-base: 2;
 
 $h1-font-size: $font-size-base * 4;
 $h2-font-size: $font-size-base * 2;
@@ -44,47 +85,11 @@ $h4-font-size: $font-size-base * 1.5;
 $h5-font-size: $font-size-base * 1.25;
 $h6-font-size: $font-size-base;
 
-$bg-border-radius: 6rem;
-// Colors:
-
-//CTA
-$cta: #ff7a85;
-$primary: #ff525d;
-$white: #ffffff;
-$black: #000000;
-//HEADINGS
-$secondary: #1f3f5b;
-$text: #4b5862;
-
-//text
-
-// white is defined
-$cta-hover: #ff7a85;
-
-$font-weight-light: 300;
-$font-weight-base: $font-weight-light;
-$line-height-base: 2;
-
-$font-family-base: "Ubuntu", sans-serif;
-$font-family-code: "Overpass", sans-serif;
-
 $headings-color: $secondary;
 $headings-font-family: "Overpass", sans-serif;
 
-$navbar-light-color: rgba(white, 0.65);
-$navbar-light-hover-color: rgba(white, 1);
-$navbar-light-active-color: white;
-
-$nav-link-color: #cccccc;
-$nav-link-hover-color: $white;
-
-$box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
-$box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075);
-$box-shadow-lg: 0 1rem 3rem rgba($black, 0.175);
-$box-shadow-inset: inset 0 1px 2px rgba($black, 0.075);
-
-$dropdown-border-width: 0;
-$dropdown-box-shadow: $box-shadow;
+$bg-border-radius: 6rem;
+// Colors:
 
 $btn-border-width: 0.2rem;
 // $btn-border-width:
