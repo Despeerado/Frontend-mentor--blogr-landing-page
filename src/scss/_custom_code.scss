@@ -112,16 +112,35 @@ p {
   box-shadow: none;
 }
 
-.nav-link {
-  text-decoration: none;
-  &.show {
-    color: white;
-  }
-  &:hover {
-    text-decoration: underline;
-    color: white;
-  }
-}
+// .nav-link {
+//   text-decoration: none;
+//   color: $secondary;
+//   &:hover {
+//     color: $secondary;
+//     @include media-breakpoint-up(sm) {
+//       text-decoration: underline;
+//       color: white;
+//     }
+//   }
+//   @include media-breakpoint-up(md) {
+//     color: $nav-link-color;
+//   }
+//   &.show {
+//     color: white;
+//     @include media-breakpoint-up(sm) {
+//       color: $secondary;
+//     }
+//     // &:hover {
+//     //   color: $secondary;
+//     //   @include media-breakpoint-up(sm) {
+//     //     text-decoration: underline;
+//     //     color: white;
+//     //   }
+//     // }
+//   }
+// }
+
+
 //new dropdown toggle
 
 .dropdown-toggle::after {
@@ -134,6 +153,9 @@ p {
   border: 0.3em solid;
   border-width: 0 0.15em 0.15em 0;
   transform: rotateZ(45deg);
+  @include media-breakpoint-up(md) {
+    color: $primary;
+  }
 }
 
 .dropdown-item {
@@ -155,9 +177,9 @@ p {
   overflow: hidden;
   height: 75%;
   @include media-breakpoint-up(lg) {
-    height: 60%;
-    bottom: 15%;
-    transform: translateY(-15%);
+    height: 100%;
+    bottom: 0%;
+    transform: translateY(-5%);
   }
 }
 
@@ -172,9 +194,10 @@ p {
 .img-translate-start {
   // translate: 0;
   width: 100%;
+  object-fit: cover;
   min-width: initial;
   height: auto;
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     width: auto;
     min-width: 100%;
     translate: -50%;
@@ -184,9 +207,10 @@ p {
 .img-translate-end {
   // translate: 0;
   width: 100%;
+  object-fit: cover;
   min-width: initial;
   height: auto;
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     width: auto;
     min-width: 100%;
     translate: 10%;
@@ -198,7 +222,7 @@ p {
 // Illustration display depending on screen size
 .editor {
   content: url("/images/illustration-editor-mobile.svg");
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     content: url("/images/illustration-editor-desktop.svg");
   }
 }
@@ -209,7 +233,7 @@ p {
 
 .laptop {
   content: url("/images/illustration-laptop-mobile.svg");
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     content: url("/images/illustration-laptop-desktop.svg");
   }
 }

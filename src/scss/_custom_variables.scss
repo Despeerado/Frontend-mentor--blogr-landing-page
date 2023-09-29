@@ -44,6 +44,7 @@ $container-max-widths: (
 $grid-columns: 12;
 $grid-gutter-width: 1.5rem * 2;
 $grid-row-columns: 6;
+$container-padding-x: $grid-gutter-width;
 
 // scss-docs-start spacer-variables-maps
 
@@ -60,15 +61,16 @@ $box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075);
 $box-shadow-lg: 0 1rem 3rem rgba($black, 0.175);
 $box-shadow-inset: inset 0 1px 2px rgba($black, 0.075);
 
-$nav-link-color: #cccccc;
+$nav-link-color: $white;
 $nav-link-hover-color: $white;
 
-$navbar-light-color: rgba(white, 0.65);
-$navbar-light-hover-color: rgba(white, 1);
-$navbar-light-active-color: white;
+$navbar-light-color: $secondary;
+$navbar-light-hover-color: $secondary;
+$navbar-light-active-color: $secondary;
 
 $dropdown-border-width: 0;
-$dropdown-box-shadow: $box-shadow;
+$dropdown-box-shadow: 0;
+$dropdown-bg: rgba($text, 0.3);
 
 $font-family-base: "Ubuntu", sans-serif;
 $font-family-code: "Overpass", sans-serif;
@@ -78,8 +80,8 @@ $font-weight-light: 300;
 $font-weight-base: $font-weight-light;
 $line-height-base: 2;
 
-$h1-font-size: $font-size-base * 4;
-$h2-font-size: $font-size-base * 2;
+$h1-font-size: $font-size-base * 3.8;
+$h2-font-size: $font-size-base * 2.3;
 $h3-font-size: $font-size-base * 1.75;
 $h4-font-size: $font-size-base * 1.5;
 $h5-font-size: $font-size-base * 1.25;
