@@ -115,7 +115,7 @@ p {
     --bs-btn-hover-bg: var(--bs-white);
     --bs-btn-font-weight: 600;
     --bs-btn-hover-border-color: var(--bs-white);
-    --bs-btn-focus-shadow-rgb: var(--bs-primary);
+    --bs-btn-focus-shadow-rgb: none;
     --bs-btn-active-color: var(--bs-btn-hover-color);
     --bs-btn-active-bg: #{shade-color($cta, 20%)};
     --bs-btn-active-border-color: #{shade-color($cta, 20%)};
@@ -127,7 +127,6 @@ p {
   --bs-btn-color: var(--bs-white);
   --bs-btn-bg: var(--bs-primary);
   --bs-btn-border-color: var(--bs-primary);
-
   --bs-btn-hover-color: var(--bs-primary);
   --bs-btn-hover-bg: var(--bs-white);
   --bs-btn-hover-border-color: var(--bs-white);
@@ -138,18 +137,22 @@ p {
   border-radius: $border-radius-pill;
   box-shadow: none;
   @include media-breakpoint-up(md) {
-    --bs-btn-color: white;
-    --bs-btn-bg: transparent;
-    --bs-btn-border-color: transparent;
-    --bs-btn-hover-color: var(--bs-primary);
-    --bs-btn-hover-bg: var(--bs-white);
+    --bs-btn-color: var(--bs-primary);
+    --bs-btn-bg: var(--bs-white);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: var(--bs-primary);
     --bs-btn-font-weight: 600;
-    --bs-btn-hover-border-color: var(--bs-white);
+    --bs-btn-hover-border-color: var(--bs-primary);
     --bs-btn-focus-shadow-rgb: var(--bs-primary);
     --bs-btn-active-color: var(--bs-btn-hover-color);
     --bs-btn-active-bg: #{shade-color(#ff7a85, 20%)};
     --bs-btn-active-border-color: #{shade-color(#ff7a85, 20%)};
   }
+}
+
+.navbar {
+  background-image: none;
 }
 
 .navbar-nav {
@@ -168,37 +171,21 @@ p {
   width: 90%;
   margin: 0 auto;
 }
+
 .nav-link {
   @include media-breakpoint-up(md) {
-    color: var(--bs-white);
+    color: #{shade-color(white, 10%)};
+    &:hover {
+      color: var(--bs-white);
+    }
   }
 }
-//   text-decoration: none;
-//   color: $secondary;
-//   &:hover {
-//     color: $secondary;
-//     @include media-breakpoint-up(sm) {
-//       text-decoration: underline;
-//       color: white;
-//     }
-//   }
-//   @include media-breakpoint-up(md) {
-//     color: $nav-link-color;
-//   }
-//   &.show {
-//     color: white;
-//     @include media-breakpoint-up(sm) {
-//       color: $secondary;
-//     }
-//     // &:hover {
-//     //   color: $secondary;
-//     //   @include media-breakpoint-up(sm) {
-//     //     text-decoration: underline;
-//     //     color: white;
-//     //   }
-//     // }
-//   }
-// }
+
+.hamburger {
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
 
 //new dropdown toggle
 
