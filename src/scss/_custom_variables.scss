@@ -61,6 +61,7 @@ $box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075);
 $box-shadow-lg: 0 1rem 3rem rgba($black, 0.175);
 $box-shadow-inset: inset 0 1px 2px rgba($black, 0.075);
 
+$nav-link-padding-y: 0;
 $nav-link-color: $white;
 $nav-link-hover-color: $white;
 
@@ -71,6 +72,7 @@ $navbar-light-active-color: $secondary;
 $dropdown-border-width: 0;
 $dropdown-box-shadow: 0;
 $dropdown-bg: rgba($text, 0.3);
+$dropdown-link-hover-bg: transparent;
 
 $font-family-base: "Ubuntu", sans-serif;
 $font-family-code: "Overpass", sans-serif;
